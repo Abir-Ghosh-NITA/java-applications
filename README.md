@@ -13,9 +13,31 @@ The Email class generates an email address based on the employee’s first and l
 .
 It also includes features like password generation, alternate email setup, and mailbox capacity control.
 The EmailApp class initializes and displays the employee's email details​
-.
-Bank Account System (Possibly Incomplete)
+Bank Account System
+This project simulates a banking system where users can create and manage different types of accounts (Checking and Savings).
+It supports functionalities like deposits, withdrawals, transfers, interest calculations, and unique account number generation.
+Key Components:
+Account (Abstract Class)
 
-The uploaded module-info.java suggests a project related to banking​
-, but there are no core Java files like a BankAccount class.
-If you have additional files for this, I can review them to give a full summary.
+Stores basic account details like name, SSN, balance, and account number​
+.
+Implements core banking functions: deposit, withdraw, transfer, and interest calculation.
+checkingaccount (Checking Account)
+
+Inherits from Account and adds features like a debit card number and PIN​
+.
+savingaccount (Savings Account)
+
+Inherits from Account and includes a safety deposit box with an ID and key​
+.
+baserate (Interface)
+
+Defines the base interest rate for accounts​
+.
+BankAccount (Main Class)
+
+Reads user data from a CSV file, creates accounts dynamically, and displays account information​
+.
+This is a well-structured OOP-based banking application
+
+
